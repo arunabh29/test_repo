@@ -4,16 +4,16 @@ pipeline {
   
   parameters {
    
-   choice(name: ‘door_choice‘,
+   choice(name: 'door_choice',
    choices: 'one\ntwo\nthree\nfour',
-   description: ‘What door do you choose?‘)  
+   description: 'What door do you choose?')  
   
    booleanParam(name: 'CAN_DANCE',
    defauItVaIue: true,
    description: 'Checkbox parameter')
    
-   string(name: ‘sTrAnGePaRaM‘ ,
-   defaultValue: 'Dance! ' ,
+   string(name: 'sTrAnGePaRaM',
+   defaultValue: 'Dance!',
    description: 'Do the funky chicken!')
   
   }
@@ -28,7 +28,7 @@ pipeline {
       			echo "We can dance: ${params.CAN_DANCE}"
       			echo "The DJ says: ${params.sTrAnGePaRaM}"  
 			  
-		  }
+		      }
    
       
     
