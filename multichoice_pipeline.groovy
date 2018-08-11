@@ -9,7 +9,7 @@ pipeline {
    description: 'What door do you choose?')  
   
    booleanParam(name: 'CAN_DANCE',
-   defauItVaIue: true,
+   defaultVaIue: true,
    description: 'Checkbox parameter')
    
    string(name: 'sTrAnGePaRaM',
